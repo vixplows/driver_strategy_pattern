@@ -32,6 +32,10 @@ public class DodgemCar {
     return this.averageSpeed;
   }
 
+  public int getNumberOfSeats() {
+    return this.numberOfSeats;
+  }
+
   // public Integer driveDistance(Integer distance){
   //   return ((distance) / this.averageSpeed) * 60;
   // }
