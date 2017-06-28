@@ -23,4 +23,11 @@ public class DriverTest {
     assertEquals(quadBike, driver.getVehicle());
   }
 
+  @Test
+  public void canSetVehicle() {
+    dodgemCar = new DodgemCar("Bumper", "Blue", 2010, 10, 2);
+    driver.setVehicle(dodgemCar);
+    assertEquals(dodgemCar, driver.getVehicle());
+  }
+
 }
