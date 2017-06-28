@@ -11,6 +11,8 @@ public class DriverTest {
   @Before
   public void before() {
     driver = new Driver ("Penelope Pitstop", quadBike);
+    dodgemCar = new DodgemCar("Bumper", "Blue", 2010, 10, 2);
+    quadBike = new QuadBike("Quirky", "Magenta", 2015, 40, 250);
   }
 
   @Test
@@ -18,16 +20,27 @@ public class DriverTest {
     assertEquals("Penelope Pitstop", driver.getName());
   }
 
-  @Test
-  public void canGetVehicle() {
-    assertEquals(quadBike, driver.getVehicle());
-  }
+  // @Test
+  // public void canGetVehicle() {
+  //   assertEquals(quadBike, driver.getVehicle());
+  // }
 
   @Test
   public void canSetVehicle() {
-    dodgemCar = new DodgemCar("Bumper", "Blue", 2010, 10, 2);
     driver.setVehicle(dodgemCar);
     assertEquals(dodgemCar, driver.getVehicle());
+  }
+
+  @Test
+  public void canGetDriveDistanceDodgemCar() {
+    driver.setVehicle(dodgemCar);
+    assertEquals((Integer)720, driver.driveDistance(120));
+  }
+
+  @Test
+  public void canGetDriveDistanceQuadBike() {
+    driver.setVehicle(quadBike);
+    assertEquals((Integer)180, driver.driveDistance(120));
   }
 
 }
