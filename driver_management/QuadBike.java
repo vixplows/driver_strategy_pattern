@@ -16,6 +16,26 @@ public class QuadBike {
     this.engineCapacity = engineCapacity;
   }
 
+  public String getName() {
+    return this.name;
+  }
+
+  public String getColour() {
+    return this.colour;
+  }
+
+  public int getProductionYear() {
+    return this.productionYear;
+  }
+
+  public int getAverageSpeed() {
+    return this.averageSpeed;
+  }
+
+  public int getEngineCapacity() {
+    return this.engineCapacity;
+  }
+
   // public Integer driveDistance(Integer distance){
   //   return ((distance) / this.averageSpeed) * 60;
   // }
