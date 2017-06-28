@@ -16,4 +16,9 @@ public class DodgemCarTest {
     assertEquals("Bumper", dodgemCar.getName());
   }
 
+  @Test
+  public void hasColour() {
+    assertEquals("Blue", dodgemCar.getColour());
+  }
+
 }

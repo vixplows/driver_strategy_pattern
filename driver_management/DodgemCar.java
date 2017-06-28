@@ -20,6 +20,10 @@ public class DodgemCar {
     return this.name;
   }
 
+  public String getColour() {
+    return this.colour;
+  }
+
   // public Integer driveDistance(Integer distance){
   //   return ((distance) / this.averageSpeed) * 60;
   // }
