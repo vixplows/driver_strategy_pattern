@@ -10,4 +10,8 @@ public class Driver {
     this.vehicle = vehicle;
   }
 
+  public String getName() {
+    return this.name;
+  }
+  
 }

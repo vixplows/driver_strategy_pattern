@@ -12,4 +12,10 @@ public class DriverTest {
   public void before() {
     driver = new Driver ("Penelope Pitstop", quadBike);
   }
+
+  @Test
+  public void canGetName() {
+    assertEquals("Penelope Pitstop", driver.getName());
+  }
+
 }
