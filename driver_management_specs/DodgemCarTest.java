@@ -26,4 +26,9 @@ public class DodgemCarTest {
     assertEquals(2010, dodgemCar.getProductionYear());
   }
 
+  @Test
+  public void hasAverageSpeed() {
+    assertEquals(5, dodgemCar.getAverageSpeed());
+  }
+
 }

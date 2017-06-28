@@ -28,6 +28,10 @@ public class DodgemCar {
     return this.productionYear;
   }
 
+  public int getAverageSpeed() {
+    return this.averageSpeed;
+  }
+
   // public Integer driveDistance(Integer distance){
   //   return ((distance) / this.averageSpeed) * 60;
   // }
