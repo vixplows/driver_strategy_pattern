@@ -18,4 +18,9 @@ public class DriverTest {
     assertEquals("Penelope Pitstop", driver.getName());
   }
 
+  @Test
+  public void canGetVehicle() {
+    assertEquals(quadBike, driver.getVehicle());
+  }
+
 }
