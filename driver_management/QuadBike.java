@@ -1,7 +1,7 @@
 package driver_management;
 import behaviours.*;
 
-public class QuadBike {
+public class QuadBike implements Driveable {
   String name;
   String colour;
   int productionYear;
@@ -36,9 +36,10 @@ public class QuadBike {
     return this.engineCapacity;
   }
 
-  // public Integer driveDistance(Integer distance){
-  //   return ((distance) / this.averageSpeed) * 60;
-  // }
+ public Integer driveDistance(int distance){
+    int timeRequired = (distance/this.averageSpeed) * 60;
+    return timeRequired;
+  }
 
 
 }

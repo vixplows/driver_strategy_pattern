@@ -8,7 +8,7 @@ public class DodgemCarTest {
 
   @Before
   public void before() {
-    dodgemCar = new DodgemCar("Bumper", "Blue", 2010, 5, 2);
+    dodgemCar = new DodgemCar("Bumper", "Blue", 2010, 10, 2);
   }
 
   @Test
@@ -28,12 +28,19 @@ public class DodgemCarTest {
 
   @Test
   public void hasAverageSpeed() {
-    assertEquals(5, dodgemCar.getAverageSpeed());
+    assertEquals(10, dodgemCar.getAverageSpeed());
   }
 
   @Test
   public void hasNumberOfSeats() {
     assertEquals(2, dodgemCar.getNumberOfSeats());
   }
+
+  @Test
+  public void getDriveDistance() {
+    assertEquals((Integer)720, dodgemCar.driveDistance(120));
+  }
+
+
 
 }

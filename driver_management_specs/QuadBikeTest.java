@@ -8,7 +8,7 @@ public class QuadBikeTest {
 
   @Before
   public void before() {
-    quadBike = new QuadBike ("Quirky", "Magenta", 2015, 45, 250);
+    quadBike = new QuadBike ("Quirky", "Magenta", 2015, 40, 250);
   }
 
   @Test
@@ -28,7 +28,7 @@ public class QuadBikeTest {
 
   @Test
   public void hasAverageSpeed() {
-    assertEquals(45, quadBike.getAverageSpeed());
+    assertEquals(40, quadBike.getAverageSpeed());
   }
 
   @Test
@@ -36,5 +36,8 @@ public class QuadBikeTest {
     assertEquals(250, quadBike.getEngineCapacity());
   }
 
-
+  @Test
+  public void getDriveDistance() {
+    assertEquals((Integer)180, quadBike.driveDistance(120));
+  }
 }

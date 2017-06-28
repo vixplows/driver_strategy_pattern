@@ -1,7 +1,7 @@
 package driver_management;
 import behaviours.*;
 
-public class DodgemCar {
+public class DodgemCar implements Driveable {
   String name;
   String colour;
   int productionYear;
@@ -36,8 +36,9 @@ public class DodgemCar {
     return this.numberOfSeats;
   }
 
-  // public Integer driveDistance(Integer distance){
-  //   return ((distance) / this.averageSpeed) * 60;
-  // }
+  public Integer driveDistance(int distance){
+    int timeRequired = (distance/this.averageSpeed)*60;
+    return timeRequired;
+  }
 
 }
