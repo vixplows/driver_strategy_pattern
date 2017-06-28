@@ -24,6 +24,10 @@ public class DodgemCar {
     return this.colour;
   }
 
+  public int getProductionYear() {
+    return this.productionYear;
+  }
+
   // public Integer driveDistance(Integer distance){
   //   return ((distance) / this.averageSpeed) * 60;
   // }

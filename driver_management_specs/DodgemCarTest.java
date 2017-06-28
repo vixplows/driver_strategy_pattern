@@ -21,4 +21,9 @@ public class DodgemCarTest {
     assertEquals("Blue", dodgemCar.getColour());
   }
 
+  @Test
+  public void hasProductionYear() {
+    assertEquals(2010, dodgemCar.getProductionYear());
+  }
+
 }
