@@ -1,36 +1,36 @@
 package driver_management;
 import behaviours.*;
 
-public class DodgemCar implements Driveable {
-  String name;
-  String colour;
-  int productionYear;
-  int averageSpeed;
-  int numberOfSeats;
+public class DodgemCar extends Vehicle implements Driveable {
+  // String name;
+  // String colour;
+  // int productionYear;
+  // int averageSpeed;
+  private int numberOfSeats;
 
   public DodgemCar(String name, String colour, int productionYear, int averageSpeed, int numberOfSeats){
-    this.name = name;
-    this.colour = colour;
-    this.productionYear = productionYear;
-    this.averageSpeed = averageSpeed;
+    super(name, colour, productionYear, averageSpeed);
+    // super(colour);
+    // super(productionYear);
+    // super(averageSpeed);
     this.numberOfSeats = numberOfSeats;
   }
 
-  public String getName() {
-    return this.name;
-  }
+  // public String getName() {
+  //   return this.name;
+  // }
 
-  public String getColour() {
-    return this.colour;
-  }
+  // public String getColour() {
+  //   return this.colour;
+  // }
 
-  public int getProductionYear() {
-    return this.productionYear;
-  }
+  // public int getProductionYear() {
+  //   return this.productionYear;
+  // }
 
-  public int getAverageSpeed() {
-    return this.averageSpeed;
-  }
+  // public int getAverageSpeed() {
+  //   return this.averageSpeed;
+  // }
 
   public int getNumberOfSeats() {
     return this.numberOfSeats;
