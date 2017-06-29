@@ -33,14 +33,14 @@ public class DriverTest {
   @Test
   public void canGetDriveDistanceDodgemCar() {
     driver.setVehicle(dodgemCar);
-    assertEquals((Integer)720, driver.driveDistance(120));
+    assertEquals(720, driver.driveDistance(120), .01);
   }
 
   @Test
   public void canGetDriveDistanceQuadBike() {
     quadBike = new QuadBike("Quirky", "Magenta", 2015, 40, 250);
     driver.setVehicle(quadBike);
-    assertEquals((Integer)180, driver.driveDistance(120));
+    assertEquals(180, driver.driveDistance(120), .01);
   }
 
 }

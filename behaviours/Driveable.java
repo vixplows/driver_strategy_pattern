@@ -1,5 +1,5 @@
 package behaviours;
 
 public interface Driveable {
-  Integer driveDistance(int distance);
+  double driveDistance(double distance);
 }

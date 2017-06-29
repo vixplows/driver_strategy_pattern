@@ -38,6 +38,6 @@ public class QuadBikeTest {
 
   @Test
   public void getDriveDistance() {
-    assertEquals((Integer)180, quadBike.driveDistance(120));
+    assertEquals(180, quadBike.driveDistance(120), .01);
   }
 }
